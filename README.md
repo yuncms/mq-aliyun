@@ -34,7 +34,7 @@ Add following lines to your main configuration file:
 ```php
 'components' => [
     'mq' => [
-        'class' => 'yuncms\mq\aliyun\Broadcast',
+        'class' => 'yuncms\mq\aliyun\MessageQueue',
         'endPoint' => 'http://a13.mns.cn-hangzhou.aliyuncs.com/',
         'topicName' => 'abc',
         'accessId' => '',
