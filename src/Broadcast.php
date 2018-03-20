@@ -5,12 +5,12 @@
  * @license http://www.tintsoft.com/license/
  */
 
-namespace yuncms\broadcast\aliyun;
+namespace yuncms\mq\aliyun;
 
 use Yii;
 use yii\base\InvalidConfigException;
-use yuncms\broadcast\BaseBroadcast;
-use yuncms\broadcast\MessageInterface;
+use yuncms\mq\BaseBroadcast;
+use yuncms\mq\MessageInterface;
 use AliyunMNS\Config;
 use AliyunMNS\Http\HttpClient;
 use AliyunMNS\Requests\PublishMessageRequest;

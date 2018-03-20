@@ -2,9 +2,9 @@
 
 适用于 YUNCMS 的 Aliyun MNS Topic。使用了DI实现的，可自行继承扩展。
 
-[![Latest Stable Version](https://poser.pugx.org/yuncms/broadcast-aliyun/v/stable.png)](https://packagist.org/packages/yuncms/broadcast-aliyun)
-[![Total Downloads](https://poser.pugx.org/yuncms/broadcast-aliyun/downloads.png)](https://packagist.org/packages/yuncms/broadcast-aliyun)
-[![License](https://poser.pugx.org/yuncms/broadcast-aliyun/license.svg)](https://packagist.org/packages/yuncms/broadcast-aliyun)
+[![Latest Stable Version](https://poser.pugx.org/yuncms/mq-aliyun/v/stable.png)](https://packagist.org/packages/yuncms/mq-aliyun)
+[![Total Downloads](https://poser.pugx.org/yuncms/mq-aliyun/downloads.png)](https://packagist.org/packages/yuncms/mq-aliyun)
+[![License](https://poser.pugx.org/yuncms/mq-aliyun/license.svg)](https://packagist.org/packages/yuncms/mq-aliyun)
 
 Installation
 ------------
@@ -16,13 +16,13 @@ Next steps will guide you through the process of installing  using [composer](ht
 Either run
 
 ```
-composer require --prefer-dist yuncms/broadcast-aliyun
+composer require --prefer-dist yuncms/mq-aliyun
 ```
 
 or add
 
 ```json
-"yuncms/broadcast-aliyun": "~1.0.0"
+"yuncms/mq-aliyun": "~1.0.0"
 ```
 
 to the `require` section of your composer.json.
@@ -34,7 +34,7 @@ Add following lines to your main configuration file:
 ```php
 'components' => [
     'broadcast' => [
-        'class' => 'yuncms\broadcast\aliyun\Broadcast',
+        'class' => 'yuncms\mq\aliyun\Broadcast',
         'endPoint' => 'http://a13.mns.cn-hangzhou.aliyuncs.com/',
         'topicName' => 'abc',
         'accessId' => '',
@@ -48,10 +48,10 @@ Add following lines to your main configuration file:
 使用方式非常简单
 
 ```php
-$broadcast = Yii::$app->broadcast;
+$mq = Yii::$app->mq;
 
 
-$res = $broadcast->send([
+$res = $mq->send([
     'Key'=>'value',
     //etc ...
 ]);
