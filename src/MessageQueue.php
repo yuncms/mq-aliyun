@@ -9,7 +9,7 @@ namespace yuncms\mq\aliyun;
 
 use Yii;
 use yii\base\InvalidConfigException;
-use yuncms\mq\BaseBroadcast;
+use yuncms\mq\BaseMessageQueue;
 use yuncms\mq\MessageInterface;
 use AliyunMNS\Config;
 use AliyunMNS\Http\HttpClient;
@@ -22,7 +22,7 @@ use AliyunMNS\Responses\PublishMessageResponse;
  * @author Tongle Xu <xutongle@gmail.com>
  * @since 3.0
  */
-class Broadcast extends BaseBroadcast
+class MessageQueue extends BaseMessageQueue
 {
 
     /**
