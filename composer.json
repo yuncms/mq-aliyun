@@ -1,0 +1,24 @@
+{
+  "name": "yuncms/mq-aliyun",
+  "description": "The aliyun mq for yuncms.",
+  "keywords": [
+    "aliyun",
+    "mq",
+    "yuncms"
+  ],
+  "license": "MIT",
+  "require": {
+    "yuncms/framework": "~1.0",
+    "xutl/AliyunMNS": "~1.3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "yuncms\\mq\\aliyun\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.0-dev"
+    }
+  }
+}
