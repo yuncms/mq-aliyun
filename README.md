@@ -33,7 +33,7 @@ Add following lines to your main configuration file:
 
 ```php
 'components' => [
-    'broadcast' => [
+    'mq' => [
         'class' => 'yuncms\mq\aliyun\Broadcast',
         'endPoint' => 'http://a13.mns.cn-hangzhou.aliyuncs.com/',
         'topicName' => 'abc',
